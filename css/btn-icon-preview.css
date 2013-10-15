@@ -24,6 +24,14 @@
 .btn-icon-112,
 .btn-icon-128 {
   position: relative;
+  -webkit-transition-property: width, height, font-size, line-height, top, background-color, color, border-radius, border;
+  -moz-transition-property: width, height, font-size, line-height, top, background-color, color, border-radius, border;
+  -o-transition-property: width, height, font-size, line-height, top, background-color, color, border-radius, border;
+  transition-property: width, height, font-size, line-height, top, background-color, color, border-radius, border;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
 .btn-icon-16s {

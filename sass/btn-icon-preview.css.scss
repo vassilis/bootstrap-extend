@@ -27,6 +27,8 @@
 .btn-icon-112,
 .btn-icon-128 {
 	position: relative;
+	@include transition-property(width, height, font-size, line-height, top, background-color, color, border-radius, border);
+	@include transition-duration(.5s); 
 }
 
 .btn-icon-16s {
