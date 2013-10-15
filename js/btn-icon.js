@@ -29,7 +29,8 @@ btnIcon.controller('MainCtrl', function($scope) {
 	$scope.styles = [
 		{circle:false, flat:false},
 		{circle:true, flat:false},
-		{circle:false, flat:true}
+		{circle:false, flat:true},
+		{circle:true, flat:true}
 	]
 
 	$scope.icon = {
@@ -42,7 +43,7 @@ btnIcon.controller('MainCtrl', function($scope) {
 	$scope.download = false;
 
 	$('.size-slider').noUiSlider({
-		range: [0, 8],
+		range: [0, $scope.sizes.length - 1],
 		start: 7,
 		handles: 1,
 	}).change(function(){
@@ -54,7 +55,7 @@ btnIcon.controller('MainCtrl', function($scope) {
 	});
 
 	$('.color-slider').noUiSlider({
-		range: [0, 6],
+		range: [0, $scope.colors.length - 1],
 		start: 0,
 		handles: 1,
 	}).change(function(){
@@ -66,7 +67,7 @@ btnIcon.controller('MainCtrl', function($scope) {
 	});
 
 	$('.style-slider').noUiSlider({
-		range: [0, 2],
+		range: [0, $scope.styles.length - 1],
 		start: 1,
 		handles: 1
 	}).change(function(){
