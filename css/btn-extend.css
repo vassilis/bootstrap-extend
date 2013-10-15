@@ -1,0 +1,75 @@
+.btn-xl {
+  font-size: 48px;
+  padding: .5em 1em;
+}
+
+.btn-inverse {
+  color: #FFF;
+  background-color: #222;
+  border-color: #000;
+}
+.btn-inverse:hover {
+  border-color: #000;
+  color: #FFF;
+  background-color: #000;
+}
+.btn-inverse.active {
+  border-color: #000;
+  background-color: #080808;
+  color: #FFF;
+}
+
+.btn-flat {
+  border-color: transparent;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+
+.btn-cool-hover {
+  position: relative;
+}
+.btn-cool-hover .first-child, .btn-cool-hover :first-child {
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  opacity: 1;
+  line-height: inherit;
+}
+.btn-cool-hover .last-child, .btn-cool-hover :last-child {
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  line-height: inherit;
+}
+.btn-cool-hover:hover .first-child, .btn-cool-hover:hover :first-child {
+  opacity: 0;
+}
+.btn-cool-hover:hover .last-child, .btn-cool-hover:hover :last-child {
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  opacity: 1;
+}

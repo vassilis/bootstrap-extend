@@ -1,0 +1,94 @@
+.btn-icon-circle {
+  padding: 0;
+  -webkit-border-radius: 256px;
+  -moz-border-radius: 256px;
+  -ms-border-radius: 256px;
+  -o-border-radius: 256px;
+  border-radius: 256px;
+}
+
+.btn-icon-16s {
+  font-size: 16px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+}
+
+.btn-icon-16 {
+  font-size: 16px;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+}
+
+.btn-icon-32 {
+  font-size: 32px;
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+}
+
+.btn-icon-48 {
+  font-size: 48px;
+  width: 96px;
+  height: 96px;
+  line-height: 96px;
+}
+
+.btn-icon-64 {
+  font-size: 64px;
+  width: 128px;
+  height: 128px;
+  line-height: 128px;
+}
+
+.btn-icon-80 {
+  font-size: 80px;
+  width: 160px;
+  height: 160px;
+  line-height: 160px;
+}
+
+.btn-icon-96 {
+  font-size: 96px;
+  width: 192px;
+  height: 192px;
+  line-height: 192px;
+}
+
+.btn-icon-112 {
+  font-size: 112px;
+  width: 224px;
+  height: 224px;
+  line-height: 224px;
+}
+
+.btn-icon-128 {
+  font-size: 128px;
+  width: 256px;
+  height: 256px;
+  line-height: 256px;
+}
+
+.btn-icon-16s,
+.btn-icon-16,
+.btn-icon-32,
+.btn-icon-48,
+.btn-icon-64,
+.btn-icon-80,
+.btn-icon-96,
+.btn-icon-112,
+.btn-icon-128 {
+  padding: 0;
+}
+.btn-icon-16s *,
+.btn-icon-16 *,
+.btn-icon-32 *,
+.btn-icon-48 *,
+.btn-icon-64 *,
+.btn-icon-80 *,
+.btn-icon-96 *,
+.btn-icon-112 *,
+.btn-icon-128 * {
+  line-height: inherit;
+}
