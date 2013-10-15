@@ -103,3 +103,14 @@
 .bubble {
 	position: relative;
 }
+
+.ruller {
+	margin: 5px 20px 0;
+	position: relative;
+	.point {
+		width: 1px;
+		height: 10px;
+		background-color: #CCC;
+		position: absolute;
+	}
+}

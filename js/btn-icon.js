@@ -45,9 +45,11 @@ btnIcon.controller('MainCtrl', function($scope) {
 		range: [0, 8],
 		start: 7,
 		handles: 1,
-		step: 1,
 	}).change(function(){
-		$scope.icon.size = $scope.sizes[eval($(this).val())];
+		current_pos = $(this).val();
+		target_pos = Math.round(current_pos);
+		$scope.icon.size = $scope.sizes[target_pos];
+		$(this).val(target_pos);
 		$scope.$apply();
 	});
 
@@ -55,20 +57,24 @@ btnIcon.controller('MainCtrl', function($scope) {
 		range: [0, 6],
 		start: 0,
 		handles: 1,
-		step: 1,
 	}).change(function(){
-		$scope.icon.color = $scope.colors[eval($(this).val())];
+		current_pos = $(this).val();
+		target_pos = Math.round(current_pos);
+		$scope.icon.color = $scope.colors[target_pos];
+		$(this).val(target_pos);
 		$scope.$apply();
 	});
 
 	$('.style-slider').noUiSlider({
 		range: [0, 2],
 		start: 1,
-		handles: 1,
-		step: 1,
+		handles: 1
 	}).change(function(){
-		$scope.icon.circle = $scope.styles[eval($(this).val())].circle;
-		$scope.icon.flat = $scope.styles[eval($(this).val())].flat;
+		current_pos = $(this).val();
+		target_pos = Math.round(current_pos);
+		$scope.icon.circle = $scope.styles[target_pos].circle;
+		$scope.icon.flat = $scope.styles[target_pos].flat;
+		$(this).val(target_pos);
 		$scope.$apply();
 	});
 

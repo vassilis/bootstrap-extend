@@ -30,28 +30,18 @@
 		<div class="container main" ng-controller="MainCtrl">
 
 			<div class="row hidden-xs hidden-sm">
-				<div class="col-sm-3">
-					<label>Button Style</label><br>
-					<div class="style-slider" style="margin: 0 20px;"></div><br>
-					<!--
-					<div class="btn-group btn-group-justified" data-toggle="buttons">
-						<label class="btn btn-default" ng-click="icon.circle = false; icon.flat = false;">
-							<input type="radio"> Default
-						</label>
-						<label class="btn btn-default active" ng-click="icon.circle = true; icon.flat = false;">
-							<input type="radio" ng-model="icon.circle"> Circle
-						</label>
-						<label class="btn btn-default" ng-click="icon.flat = true; icon.circle = false;">
-							<input type="radio" ng-model="icon.flat"> Flat
-						</label>
-					</div>
-					-->
-					<label>Icon Size</label><br>
-					<div class="size-slider" style="margin: 0 20px;"></div><br>
-					<!-- <select ng-model="icon.size" ng-options="s.name for s in sizes" class="form-control"></select><br> -->
-					<label>Button Color</label><br>
-					<!-- <select ng-model="icon.color" ng-options="c.name for c in colors" class="form-control"></select> -->
+				<div class="col-sm-3 text-center">
+					Icon Size<br>
+					<div class="size-slider" style="margin: 0 20px;"></div>
+					<div class="ruller"><div class="point" ng-repeat="b in sizes" style="left:{{$index * (100 / (sizes.length - 1))}}%;"></div></div>
+					<br><br>
+					Button Color<br>
 					<div class="color-slider	" style="margin: 0 20px;"></div>
+					<div class="ruller"><div class="point" ng-repeat="c in colors" style="left:{{$index * (100 / (colors.length - 1))}}%;"></div></div>
+					<br><br>
+					Button Style<br>
+					<div class="style-slider" style="margin: 0 20px;"></div>
+					<div class="ruller"><div class="point" ng-repeat="a in styles" style="left:{{$index * (100 / (styles.length - 1))}}%;"></div></div>
 				</div>
 
 				<div class="col-sm-9">
@@ -82,7 +72,7 @@
 						Both are available in CSS and SASS.
 						<span>Enjoy!</span>
 						-->
-						Come on dude, it's time to admit it...<br>YOU ARE ADDICTED TΟ BOOTSTRAP!<br>You can't live without your daily dose of pure CSS.<br><br>
+						Come on dude, you got to admit it...<br>You are addicted to Bootstrap!<br>You can't live without your daily dose of pure CSS.<br><br>
 						And then... how was your last trip to IcoMoon?<br>How many hours to choose the exact right icons?<br><br>
 						You know something? I got something for you boy...<br>a few little seeds for the beautiful farm of your brain!<br><br>
 						Grab them and go create something great!
