@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/btn-icon-preview.css">
+		<link rel="stylesheet" href="css/jquery.nouislider.css">
 		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700'>
 		<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 	</head>
@@ -31,6 +32,8 @@
 			<div class="row hidden-xs hidden-sm">
 				<div class="col-sm-3">
 					<label>Button Style</label><br>
+					<div class="style-slider" style="margin: 0 20px;"></div><br>
+					<!--
 					<div class="btn-group btn-group-justified" data-toggle="buttons">
 						<label class="btn btn-default" ng-click="icon.circle = false; icon.flat = false;">
 							<input type="radio"> Default
@@ -41,11 +44,14 @@
 						<label class="btn btn-default" ng-click="icon.flat = true; icon.circle = false;">
 							<input type="radio" ng-model="icon.flat"> Flat
 						</label>
-					</div><br>
-					<label>Icon Size</label>
-					<select ng-model="icon.size" ng-options="s.name for s in sizes" class="form-control"></select><br>
-					<label>Button Color</label>
-					<select ng-model="icon.color" ng-options="c.name for c in colors" class="form-control"></select>
+					</div>
+					-->
+					<label>Icon Size</label><br>
+					<div class="size-slider" style="margin: 0 20px;"></div><br>
+					<!-- <select ng-model="icon.size" ng-options="s.name for s in sizes" class="form-control"></select><br> -->
+					<label>Button Color</label><br>
+					<!-- <select ng-model="icon.color" ng-options="c.name for c in colors" class="form-control"></select> -->
+					<div class="color-slider	" style="margin: 0 20px;"></div>
 				</div>
 
 				<div class="col-sm-9 text-center icon-preview">
@@ -85,6 +91,7 @@
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
 		<script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/vendor/jquery.nouislider.min.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/btn-icon.js"></script>
 		<script>

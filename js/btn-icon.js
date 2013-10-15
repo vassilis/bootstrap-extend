@@ -26,6 +26,12 @@ btnIcon.controller('MainCtrl', function($scope) {
 		{name: 'inverse', value:'btn-inverse'}
 	]
 
+	$scope.styles = [
+		{circle:false, flat:false},
+		{circle:true, flat:false},
+		{circle:false, flat:true}
+	]
+
 	$scope.icon = {
 		size: $scope.sizes[7],
 		color: $scope.colors[0],
@@ -34,5 +40,36 @@ btnIcon.controller('MainCtrl', function($scope) {
 	}
 
 	$scope.download = false;
+
+	$('.size-slider').noUiSlider({
+		range: [0, 8],
+		start: 7,
+		handles: 1,
+		step: 1,
+	}).change(function(){
+		$scope.icon.size = $scope.sizes[eval($(this).val())];
+		$scope.$apply();
+	});
+
+	$('.color-slider').noUiSlider({
+		range: [0, 6],
+		start: 0,
+		handles: 1,
+		step: 1,
+	}).change(function(){
+		$scope.icon.color = $scope.colors[eval($(this).val())];
+		$scope.$apply();
+	});
+
+	$('.style-slider').noUiSlider({
+		range: [0, 2],
+		start: 1,
+		handles: 1,
+		step: 1,
+	}).change(function(){
+		$scope.icon.circle = $scope.styles[eval($(this).val())].circle;
+		$scope.icon.flat = $scope.styles[eval($(this).val())].flat;
+		$scope.$apply();
+	});
 
 });
