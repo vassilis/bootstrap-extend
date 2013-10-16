@@ -25,7 +25,7 @@ Example:
         <span class="last-child">Hover</span>
     </a>
     
-**Hint**: You can avoid first-child and last-child classes if you plan to support IE9 or newer.
+**Hint**: You can avoid first-child and last-child classes if you don't care about older IE versions (IE9 or newer will be fine).
 
 ---
 
