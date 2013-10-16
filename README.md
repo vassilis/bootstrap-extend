@@ -17,6 +17,7 @@ Who needs borders and curves.
 
 **.btn-cool-hover**  
 Use this one to show different content when you hover the button.  
+
 Example:  
 
 
