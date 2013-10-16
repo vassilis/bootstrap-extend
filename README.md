@@ -1,6 +1,6 @@
 # bootstrap-extend
 
-CSS addons for Bootstrap.
+Addon CSS for Bootstrap.
 
 ---
 
@@ -34,7 +34,7 @@ Example:
 **.btn-icon-circle**  
 Drops padding and adds enough border-radius to make it round.
 
-The following classes will sent to font-size and line-height in order to produce nice crisp icon buttons.  
+The following classes will set the button width, height, font-size and line-height in order to produce nice crisp icon buttons.  
 
 **Crisp Size(16 × N) px**  
 
