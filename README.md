@@ -1,6 +1,6 @@
 # bootstrap-extend
 
-Addon CSS for Bootstrap.
+CSS addons for Bootstrap.
 
 ---
 
