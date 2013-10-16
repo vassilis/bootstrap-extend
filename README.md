@@ -2,6 +2,8 @@
 
 CSS addons for Bootstrap.
 
+**Demo**: [http://hackwithin.com/bootstrap-extend/btn-icon/](http://hackwithin.com/bootstrap-extend/btn-icon/)
+
 ---
 
 ## btn-extend.css
