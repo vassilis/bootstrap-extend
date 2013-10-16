@@ -12,7 +12,7 @@ Big fat buttons.
 **.btn-inverse**  
 Dark buttons.
 
-**.btn-flat**
+**.btn-flat**  
 Who needs borders and curves.
 
 **.btn-cool-hover**  
@@ -25,7 +25,7 @@ Example:
         <span class="last-child">Hover</span>
     </a>
     
-**Hint**: You can avoid first-child and last-child classes if you just care to support IE9 and newer.
+**Hint**: You can avoid first-child and last-child classes if you plan to support IE9 or newer.
 
 ---
 
